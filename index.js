@@ -4,8 +4,8 @@ const gameElement = document.getElementById("game")
 
 ctx.imageSmoothingEnabled = false
 
-//currentRoom = findRoom("tutorial0")
-currentRoom = rooms[rooms.length - 1]
+currentRoom = findRoom("tutorial0")
+//currentRoom = rooms[rooms.length - 1]
 currentRoom.load()
 
 new Transition(undefined, slide, 0, 0)
