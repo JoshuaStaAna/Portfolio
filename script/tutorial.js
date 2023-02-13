@@ -13,15 +13,15 @@ class Tutorial0 extends Room {
 		this.addDoor("gameStart0", borderWidth, color, dirRight, 300 - 40, 80)
 		this.addDoor("tutorial1", borderWidth, color, dirDown, (this.bnd.width * 3 / 4) - (Math.floor(borderWidth / 2)), (this.bnd.width / 2) - borderWidth + 1)
 		this.addDoor("tutorial4", borderWidth, color, dirLeft, borderWidth + 40, 80)
-		this.addWall(new Wall(0, borderWidth + 80, 400, borderWidth, color))
-		this.addWall(new Wall(481, 0, this.bnd.width - 481, 80 + (borderWidth * 2), color))
+		this.addWall(new Wall(0, borderWidth + 80, 400, 30, color))
+		this.addWall(new Wall(481, 0, this.bnd.width - 481, 80 + (30 * 2), color))
 		
-		this.addWall(new Wall(this.bnd.width - 130, 300, 130, borderWidth, color))
+		this.addWall(new Wall(this.bnd.width - 200, 300, 200, 30, color))
 		
-		this.addHazard(new Spike(this.bnd.width - borderWidth, 300 + borderWidth, 20, dirLeft))
+		this.addHazard(new Spike(this.bnd.width - borderWidth, 315 + borderWidth, 30, dirLeft))
 		
-		this.addFloat(new Text((this.bnd.width / 2) + 220, 350, 24, "arial black", "PORTFOLIO / TUTORIAL", "black", "center"))
-		this.addFloat(new Text((this.bnd.width / 2) + 220, 376, 24, "arial black", "\u21e9", "black", "center", true))
+		this.addFloat(new Text((this.bnd.width / 2) + 220, 370, 24, "arial black", "PORTFOLIO / TUTORIAL", "black", "center"))
+		this.addFloat(new Text((this.bnd.width / 2) + 220, 426, 60, "arial black", "\u21e9", "yellow", "center", true))
 		
 		this.spawn = new Spawn(100, 299)
 		this.addFloat(this.spawn)
@@ -33,8 +33,11 @@ class Tutorial0 extends Room {
 		this.addFloat(new Text(250 - 5, 255, 24, "arial black", "PRESS", "black", "right"))	
 		this.addFloat(new Text(250 + spacing + 30, 255, 24, "arial black", "TO MOVE", "black", "left"))	
 		
-		this.addFloat(new Text(this.bnd.width - 110, 255, 24, "arial black", "GAME", "black", "left"))
-		this.addFloat(new Text(this.bnd.width - 70, 281, 24, "arial black", "\u21e8", "black", "center", true))	
+		this.addFloat(new Text(this.bnd.width - 140, 255, 24, "arial black", "GAME", "black", "left"))
+		this.addFloat(new Text(this.bnd.width - 98, 295, 60, "arial black", "\u21e8", "yellow", "center", true))	
+		
+		this.addFloat(new Text(200, 80, 60, "arial black", "\u21e8", "yellow", "center", true))
+		this.addFloat(new Text(438, 80, 60, "arial black", "\u21e9", "yellow", "center", true))
 	}
 	
 	func() {
@@ -73,6 +76,11 @@ class Tutorial1 extends Room {
 		this.addFloat(new Text(330, 122, 24, "arial black", "JUMP WHILE MOVING", "black", "center"))	
 		this.addFloat(new Text(330, 150, 24, "arial black", "TOWARDS A WALL IN", "black", "center"))
 		this.addFloat(new Text(330, 178, 24, "arial black", "MID-AIR TO WALL JUMP", "black", "center"))	
+		
+		this.addFloat(new Text(740, 260, 60, "arial black", "\u21e6", "Yellow", "center", true))	
+		this.addFloat(new Text(380, 260, 60, "arial black", "\u21e6", "Yellow", "center", true))	
+		this.addFloat(new Text(200, 260, 60, "arial black", "\u21e7", "Yellow", "center", true))	
+		this.addFloat(new Text(70, 70, 60, "arial black", "\u21e6", "Yellow", "center", true))	
 	}
 	
 	func() {
@@ -117,6 +125,15 @@ class Tutorial2 extends Room {
 		this.addWall(new Wall(720, 0, 80, 64, color))
 		
 		this.addMod(new Accel(100, 60, 18, dirLeft, 1))
+		
+		this.addFloat(new Text(500, 370, 60, "arial black", "\u21e6", "Yellow", "center", true))	
+		this.addFloat(new Text(55, 370, 60, "arial black", "\u21e7", "Yellow", "center", true))	
+		this.addFloat(new Text(55, 270, 60, "arial black", "\u21e7", "Yellow", "center", true))	
+		this.addFloat(new Text(500, 230, 60, "arial black", "\u21e8", "Yellow", "center", true))	
+		this.addFloat(new Text(945, 230, 60, "arial black", "\u21e7", "Yellow", "center", true))
+		this.addFloat(new Text(945, 130, 60, "arial black", "\u21e7", "Yellow", "center", true))
+		this.addFloat(new Text(850, 80, 60, "arial black", "\u21e6", "Yellow", "center", true))	
+		this.addFloat(new Text(55, 80, 60, "arial black", "\u21e7", "Yellow", "center", true))	
 	}
 	
 	func() {
@@ -157,6 +174,26 @@ class Tutorial3 extends Room {
 		this.addWall(new Wall(500, 200 - 60 + borderWidth, 345, 60, color))
 		
 		this.addFloat(new Text(100, 64, 24, "arial black", "JUMP DURING A SPRINTING SLIDE TO DIVE LONG DISTANCES", "black", "left"))	
+		
+		this.addFloat(new Sprite(200, 350 - 22, img("buttonShift.png")))
+		this.addFloat(new Text(200 + 80, 350, 24, "arial black", "+", "black", "right"))	
+		this.addFloat(new Sprite(200 + 85, 350 - 22, img("buttonRight.png")))
+		this.addFloat(new Text(200 + 120, 350, 24, "arial black", ",", "black", "left"))
+		this.addFloat(new Sprite(200 + 138, 350 - 22, img("buttonDown.png")))	
+		
+		this.addFloat(new Sprite(218, 120 - 22, img("buttonShift.png")))
+		this.addFloat(new Text(218 + 80, 120, 24, "arial black", "+", "black", "right"))	
+		this.addFloat(new Sprite(218 + 85, 120 - 22, img("buttonRight.png")))
+		this.addFloat(new Text(218 + 120, 120, 24, "arial black", ",", "black", "left"))
+		this.addFloat(new Sprite(218 + 138, 120 - 22, img("buttonDown.png")))	
+		this.addFloat(new Text(218 + 172, 120, 24, "arial black", ",", "black", "left"))
+		this.addFloat(new Sprite(218 + 190, 120 - 22, img("buttonSpace.png")))	
+		
+		this.addFloat(new Text(608, 383, 60, "arial black", "\u21e8", "Yellow", "center", true))	
+		this.addFloat(new Text(945, 370, 60, "arial black", "\u21e7", "Yellow", "center", true))	
+		this.addFloat(new Text(945, 170, 60, "arial black", "\u21e7", "Yellow", "center", true))	
+		this.addFloat(new Text(665, 140, 60, "arial black", "\u21e6", "Yellow", "center", true))
+		this.addFloat(new Text(55, 80, 60, "arial black", "\u21e7", "Yellow", "center", true))	
 	}
 	
 	func() {
@@ -205,11 +242,21 @@ class Tutorial4 extends Room {
 		
 		this.addWall(new Wall(995, 340, 100, 80, color))
 		
-		this.addWall(new Wall(1200, 280, 50, borderWidth, color))
+		this.addWall(new Wall(1200, 280, 50, 30, color))
 		
-		this.addWall(new Wall(1350, 220, 150, borderWidth, color))
+		this.addWall(new Wall(1350, 220, 150, 30, color))
 		
-		this.addWall(new Wall(this.bnd.width - borderWidth - 100, 220, 100, borderWidth, color))
+		this.addWall(new Wall(this.bnd.width - 180, 220, 180, 30, color))
+		
+		this.addFloat(new Text(350, 455, 60, "arial black", "\u21e7", "Yellow", "center", true))
+		this.addFloat(new Text(350, 255, 60, "arial black", "\u21e7", "Yellow", "center", true))
+		this.addFloat(new Text(350, 95, 60, "arial black", "\u21e8", "Yellow", "center", true))
+		this.addFloat(new Text(750, 95, 60, "arial black", "\u21e9", "Yellow", "center", true))
+		this.addFloat(new Text(750, 325, 60, "arial black", "\u21e8", "Yellow", "center", true))
+		this.addFloat(new Text(1045, 325, 60, "arial black", "\u21e8", "Yellow", "center", true))
+		this.addFloat(new Text(1425, 210, 60, "arial black", "\u21e8", "Yellow", "center", true))
+		this.addFloat(new Text(1660, 210, 60, "arial black", "\u21e8", "Yellow", "center", true))
+		this.addFloat(new Text(1905, 210, 60, "arial black", "\u21e8", "Yellow", "center", true))
 	}
 	
 	func() {
@@ -237,6 +284,10 @@ class GameStart0 extends Room {
 		
 		this.addFloat(new Text(this.bnd.width / 2, 130, 24, "arial black", "PROGRESS THROUGH AN ENDLESS AMOUNT", "black", "center"))	
 		this.addFloat(new Text(this.bnd.width / 2, 160, 24, "arial black", "OF ROOMS BEFORE THE GHOST CATCHES YOU", "black", "center"))	
+	
+		this.addFloat(new Text(155, 270, 60, "arial black", "\u21e8", "yellow", "center", true))
+		this.addFloat(new Text(500, 270, 60, "arial black", "\u21e8", "yellow", "center", true))
+		this.addFloat(new Text(this.bnd.width - 155, 270, 60, "arial black", "\u21e8", "yellow", "center", true))
 	}
 	
 	func() {

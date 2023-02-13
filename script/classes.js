@@ -948,7 +948,7 @@ class Spawn extends PhysicsObj {
 	}
 
 	draw() {
-		if (this.alpha > 0) {
+		if (0) {
 			fillStyle(this.color)
 			fillRect(this.getTrueOriginX() + cam.getOffX() - (this.bBox.width / 2), this.getTrueOriginY() + cam.getOffY() - (this.bBox.height / 2), this.bBox.width, this.bBox.height, this.alpha)
 		}
