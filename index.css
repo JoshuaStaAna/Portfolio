@@ -244,3 +244,9 @@ body {
 	border-color: #3a3d50;
 	transition: border-color 0.5s;
 }
+
+.preventSelect {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
