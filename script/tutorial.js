@@ -177,13 +177,13 @@ class Tutorial3 extends Room {
 		
 		this.addFloat(new Sprite(200, 350 - 22, img("buttonShift.png")))
 		this.addFloat(new Text(200 + 80, 350, 24, "arial black", "+", "black", "right"))	
-		this.addFloat(new Sprite(200 + 85, 350 - 22, img("buttonLeft.png")))
+		this.addFloat(new Sprite(200 + 85, 350 - 22, img("buttonRight.png")))
 		this.addFloat(new Text(200 + 120, 350, 24, "arial black", ",", "black", "left"))
 		this.addFloat(new Sprite(200 + 138, 350 - 22, img("buttonDown.png")))	
 		
 		this.addFloat(new Sprite(218, 120 - 22, img("buttonShift.png")))
 		this.addFloat(new Text(218 + 80, 120, 24, "arial black", "+", "black", "right"))	
-		this.addFloat(new Sprite(218 + 85, 120 - 22, img("buttonRight.png")))
+		this.addFloat(new Sprite(218 + 85, 120 - 22, img("buttonLeft.png")))
 		this.addFloat(new Text(218 + 120, 120, 24, "arial black", ",", "black", "left"))
 		this.addFloat(new Sprite(218 + 138, 120 - 22, img("buttonDown.png")))	
 		this.addFloat(new Text(218 + 172, 120, 24, "arial black", ",", "black", "left"))
