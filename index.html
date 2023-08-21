@@ -1,222 +1,484 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Joshua Sta. Ana</title>
-</head>
-<link rel="stylesheet" href="index.css">
+	<head>
+		<title>Joshua Sta. Ana</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<div id="buttonContainer">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/coverPicture.jpg" alt="" /></a>
+					<h1><strong>Joshua Sta. Ana</strong></h1>
+				</div>
+			</header>
 
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next"
-		onclick="plusSlides(1)">&#10095;</a>
-
-	<div id="slideContainer">
-
-		<div class="slide">
-			<div class="numbertext">5 / 5</div>
-			<h1 style="background-color: rgb(114, 60, 181);">Contact</h1>
-			<div class="rounded box" style="width: 70%;">
-				<h3>
-					<b>E-Mail:</b> jsjstaana@gmail.com
-				</h3>
-				<h3>
-					<b>Github:</b> <a href="https://github.com/JoshuaStaAna">https://github.com/JoshuaStaAna</a>
-				</h3>
-				<h3>
-					<b>Linkedin:</b> <a href="https://www.linkedin.com/in/joshua-sta-ana-692933254/">https://www.linkedin.com/in/joshua-sta-ana-692933254/</a>
-				</h3>
-			</div>
-		</div>
-
-		<div class="slide">
-			<div class="numbertext">4 / 5</div>
-			<h1 style="background-color: rgb(181, 60, 60); margin-bottom: 0.5%;">Projects</h1>
-			<div id="workRow">
-				<div id="workColumn" class="rounded box">
-					<div id="workColumn">
-						<video style="width: 20vw;height: calc(202 * width /360);"class="rounded" controls>
-							<source src="images/bored.mp4" type="video/mp4">
-						</video>
+		<!-- Main -->
+			<div id="main">
+				<script>
+					function toggleHide() {
+						x = document.getElementById("fade");
+						if (x.style.display != "block") {
+							x.style.display = "block";
+							setTimeout(function () { x.style.opacity = '1' }, 10);
+						} else {
+							x.style.opacity = '0';
+							x.style.display = "none";
+						}
+					}
+				</script>
+				<script>
+					function hideByDefault() {
+						document.getElementById("fade").style.display = 'none';
+					}
+				</script>
+				<!-- One -->
+				<section id="one">
+					<header class="major">
+						<h2><span style='font-weight: bold;'>Computer Science graduate</span> from <span style="color:#CC0033;">Rutgers University</span> with a passion for <span style='font-weight: bold;'>Game and Software Development</span> looking to enter the field.</h2>
+					</header>
+					<ul class="actions">
+						<li><a href="javascript:void(0)" class="button" onclick="toggleHide()">More</a></li>
+						<div id="fade" onload="hideByDefault()" style="transform: translate(-40%);">
+							<h2><br><span style='font-weight: bold;'>Education</span></h2>
+							<span style='font-weight: bold;'>Rutgers University - New Brunswick</span>
+							<ul>
+								<li>September 2019 - December 2022</li>
+								<li>Bachelor of Arts in <span style='font-weight: bold;'>Computer Science</span> - GPA: <span style='font-weight: bold;'>3.4</span></li>
+							</ul>
+							<span style='font-weight: bold;'>Relevant Coursework</span>
+							<ul>
+								<li><span style='font-weight: bold;'>Software Methodology:</span> OOP, GUI, Testing and Debugging</li>
+								<li><span style='font-weight: bold;'>Internet Technology:</span> HTTP, E-Mail, Video Streaming</li>
+								<li><span style='font-weight: bold;'>Design of Algorithms:</span> Analysis of Algorithms, Search/Sorting, Graph Problems</li>
+							</ul>
+							<h2><br><span style='font-weight: bold;'>Technical Skills</span></h2>
+							<span style='font-weight: bold;'>Languages</span>
+							<ul>
+								<li>Java, JavaScript, C, C#, C++, Python, SQL, HTML</li>
+							</ul>
+							<span style='font-weight: bold;'>Tools</span>
+							<ul>
+								<li>Git, Unity, Godot, Gamemaker Studio 2, Android Studio</li>
+							</ul>
+							<h2><br><span style='font-weight: bold;'>Miscellaneous</span></h2>
+							<span style='font-weight: bold;'>Favorite Games</span>
+							<ul>
+								<li>Dark Souls, Inscryption, Tekken 7</li>
+							</ul>
+				</section>
+				
+				<!-- Two -->
+				<section id="two">
+					<h2>Projects</h2>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h3>Blue Is Bright <i>(Game Jam Game)</i></h3>
+							<p>
+								Made for the 1-Bit Game Jam. Made using Unity/C# during a 7 day time period. A 2.5D Turn-Based Roleplaying Game where you cannot see what the enemy is doing. <a href="https://joshua-sta-ana.itch.io/blue-is-bright">Try Here</a>
+							</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h3>Coffee Making/Shoot 'Em Up - Unity Game</h3>
+							<p>2D Top-down Game made using Unity/C#. A game where you have to keep up with completing coffee orders while dodging different bullet patterns.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h3>Bored Bot <i>(Discord Bot)</i></h3>
+							<p>A Discord bot written in Python using the discord.py and pycord libraries. Bot allows users to play board games with other users in chat. Can play games like Battleship, Connect 4, Rock Paper Scissors, and Tic Tac Toe.</p>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h3>2D Platformer - Javascript Game</h3>
+							<p>Endless 2D platformer written in Javascript and integrated into an HTML website. Progressing through the game would allow the user to go further into the website.</p>
+						</article>
 					</div>
-					<div id="workColumn" style="margin-left: 8%;">
-						<b>Discord Bot - "Bored Bot" <em>(Python)</em></b>
-						<ul>
-							<li>Developed a Discord Bot to play board games using
-								discord.py and pycord libraries
-								<ul>
-									<li>Battleship, Connect 4, Rock Paper Scissors, Tic Tac
-										Toe</li>
+					<ul class="actions">
+						<li><a href="files/Resume.pdf" class="button" target="_blank">Resume PDF</a></li>
+					</ul>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<h2>Contact Me</h2>
+					<div class="row">
+						<div class="col-8 col-12-small">
+							<form action="https://formsubmit.co/jsjstaana@email.com" method="POST" target="_blank">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+								</div>
+								<br>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</li>
-						</ul>
-						<a href="https://github.com/JoshuaStaAna/BoardBot">Github
-							Repository</a>
+						</div>
+						</form>
+						<div class="col-4 col-12-small">
+							<ul class="labeled-icons">
+								<li>
+									<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+									<a href="#">jsjstaana@gmail.com</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div id="workColumn" class="rounded box">
-					<div id="workColumn">
-						<video style="width: 20vw;height: calc(202 * width /360);" class="rounded" controls>
-							<source src="images/bullet.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div id="workColumn" style="margin-left: 8%;">
-						<b>"Shoot 'Em Up" Video Game <em>(Gamemaker Studio)</em></b>
-						<ul>
-							<li>Top-down perspective with a psuedo 3d background</li>
-							<li>Survive variable bullet patterns that with progressive
-								increase in difficulty
-								<ul>
-									<li>Debugging, handling real-time user input, and GUI
-										design</li>
+				</section>
+
+				<!-- Four -->
+				<!--
+						<section id="four">
+							<h2>Elements</h2>
+
+							<section>
+								<h4>Text</h4>
+								<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+								This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+								This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+								<hr />
+								<header>
+									<h4>Heading with a Subtitle</h4>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h5>Heading with a Subtitle</h5>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<hr />
+								<h2>Heading Level 2</h2>
+								<h3>Heading Level 3</h3>
+								<h4>Heading Level 4</h4>
+								<h5>Heading Level 5</h5>
+								<h6>Heading Level 6</h6>
+								<hr />
+								<h5>Blockquote</h5>
+								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+								<h5>Preformatted</h5>
+								<pre><code>i = 0;
+
+	while (!deck.isInOrder()) {
+	print 'Iteration ' + i;
+	deck.shuffle();
+	i++;
+	}
+
+	print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+							</section>
+
+							<section>
+								<h4>Lists</h4>
+								<div class="row">
+									<div class="col-6 col-12-xsmall">
+										<h5>Unordered</h5>
+										<ul>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+										<h5>Alternate</h5>
+										<ul class="alt">
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<h5>Ordered</h5>
+										<ol>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ol>
+										<h5>Icons</h5>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<h5>Actions</h5>
+								<ul class="actions">
+									<li><a href="#" class="button primary">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
 								</ul>
-							</li>
-						</ul>
-						<a
-							href="https://drive.google.com/file/d/1_p7sCZ4dCS3Csa3DZvaJjchJ4RRjCXNV/view?usp=share_link">Google
-							Drive Download <em>(Windows Only)</em></a>
-					</div>
-				</div>
-			</div>
-		</div>
+								<ul class="actions small">
+									<li><a href="#" class="button primary small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="#" class="button primary fit">Default</a></li>
+											<li><a href="#" class="button fit">Default</a></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-small">
+										<ul class="actions stacked">
+											<li><a href="#" class="button primary small fit">Small</a></li>
+											<li><a href="#" class="button small fit">Small</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
 
-		<div class="slide">
-			<div class="numbertext">3 / 5</div>
-			<h1 style="background-color: rgb(60, 88, 181);">Skills</h1>
-			<div id="skillsRow">
-				<div id="skillsColumn" class="rounded box">
-					<h3>Technical Skills</h3>
-					<ul>
-						<li><b>Languages:</b>
-							<ul>
-								<li>Java, Javascript, C, C#, Python, Gamemaker Language <em>(Proficient)</em></li>
-								<li>SQL, HTML <em>(Familiar)</em></li>
-							</ul></li>
-						<li><b>Tools:</b> Unity, Gamemaker Studio 2, Android Studio</li>
+							<section>
+								<h4>Table</h4>
+								<h5>Default</h5>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item One</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item Two</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item Three</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item Four</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item Five</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+
+								<h5>Alternate</h5>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item One</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item Two</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item Three</td>
+												<td> Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item Four</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item Five</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</section>
+
+							<section>
+								<h4>Buttons</h4>
+								<ul class="actions">
+									<li><a href="#" class="button primary">Primary</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button large">Large</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions fit">
+									<li><a href="#" class="button primary fit">Fit</a></li>
+									<li><a href="#" class="button fit">Fit</a></li>
+								</ul>
+								<ul class="actions fit small">
+									<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+									<li><a href="#" class="button fit small">Fit + Small</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+									<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="button primary disabled">Primary</span></li>
+									<li><span class="button disabled">Default</span></li>
+								</ul>
+							</section>
+
+							<section>
+								<h4>Form</h4>
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+											<label for="demo-priority-low">Low Priority</label>
+										</div>
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-normal" name="demo-priority">
+											<label for="demo-priority-normal">Normal Priority</label>
+										</div>
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-high" name="demo-priority">
+											<label for="demo-priority-high">High Priority</label>
+										</div>
+										<div class="col-6 col-12-small">
+											<input type="checkbox" id="demo-copy" name="demo-copy">
+											<label for="demo-copy">Email me a copy of this message</label>
+										</div>
+										<div class="col-6 col-12-small">
+											<input type="checkbox" id="demo-human" name="demo-human" checked>
+											<label for="demo-human">I am a human and not a robot</label>
+										</div>
+										<div class="col-12">
+											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+
+							<section>
+								<h4>Image</h4>
+								<h5>Fit</h5>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<h5>Left &amp; Right</h5>
+								<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+								<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							</section>
+
+						</section>
+					-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/joshua-sta-ana-692933254/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/JoshuaStaAna" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:jsjstaana@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
-				<div id="skillsColumn" class="rounded box" style="margin-top: -5%">
-					<h3>Relavant Course Projects</h3>
-					<ul>
-						<li><b>University Management Page <em>(HTML/SQL)</em></b>
-							<ul>
-								<li>Created an offline site allowing students and
-									administrators to log in and manage coursework</li>
-								<li>Connected to an SQL database</li>
-							</ul></li>
-						<li><b>Bank Teller GUI <em>(Java/JavaFX)</em></b>
-							<ul>
-								<li>GUI to create different types of accounts, delete
-									accounts, and withdraw/deposit to accounts</li>
-								<li><ul>
-										<li>Object-Inheritance, GUI design</li>
-									</ul></li>
-							</ul></li>
-						<li><b>Cafe Application <em>(Java/Android Studio)</em></b>
-							<ul>
-								<li>Android application allows the user to place orders for
-									customizable donuts and coffees</li>
-								<li>Application can store/remove orders from the current
-									session's database</li>
-							</ul></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+			</footer>
 
-		<div class="slide">
-			<div class="numbertext">2 / 5</div>
-			<h1 style="background-color: rgb(60, 181, 104);">Education</h1>
-			<div id="educationRow">
-				<div id="educationColumn" class="rounded box">
-					<h3>
-						Rutgers University - <em>New Brunswick</em>
-					</h3>
-					<p>Attended 2019 - 2022</p>
-					<p>
-						Bachelor of Arts in Computer Science - <em>GPA: 3.4</em>
-					</p>
-				</div>
-				<div id="educationColumn" class="rounded box">
-					<h3>Relevant Coursework</h3>
-					<ul>
-						<li><b>Software Methodology:</b>
-							<ul>
-								<li>Utilized Java to program GUIs in JavaFX and Android
-									Studio</li>
-								<li>Implemented readable, annotated code and coding
-									standards</li>
-							</ul></li>
-						<li><b>Internet Technology:</b> Familiarized with HTTP,
-							E-Mail, Video Streaming</li>
-						<li><b>Design of Algorithms:</b> Asymptotic analysis,
-							search/sorting, graph</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-		<div class="slide">
-			<div class="numbertext">1 / 5</div>
-			<h1 style="background-color: rgb(99, 99, 99);">Joshua Sta. Ana</h1>
-			<div class="rounded box" style="width: 70%">
-				<img src="images/cover_picture.jpg" width=18% height=width
-					style="border-radius: 50%; top: 10%; right: 3%; position: absolute">
-				<h2>Resourceful computer science graduate</h2>
-				<h2>seeking to enter the field.</h2>
-			</div>
-		</div>
-
-	</div>
-
-</div>
-
-<div id="gameContainer">
-	<div class="row">
-		<div class="column">
-			<button class="preventSelect pageButton rounded button" id="pageButton"
-				onclick="currentSlide(1)" style="background-color: rgb(99, 99, 99);">Home</button>
-		</div>
-		<div class="column">
-			<button class="preventSelect pageButton rounded button" id="pageButton"
-				onclick="currentSlide(2)"
-				style="background-color: rgb(60, 181, 104);">Education</button>
-		</div>
-		<div class="column">
-			<button class="preventSelect pageButton rounded button" id="pageButton"
-				onclick="currentSlide(3)"
-				style="background-color: rgb(60, 88, 181);">Skills</button>
-		</div>
-		<div class="column">
-			<button class="preventSelect pageButton rounded button" id="pageButton"
-				onclick="currentSlide(4)"
-				style="background-color: rgb(181, 60, 60);">Projects</button>
-		</div>
-		<div class="column">
-			<button class="preventSelect pageButton rounded button" id="pageButton"
-				onclick="currentSlide(5)"
-				style="background-color: rgb(114, 60, 181);">Contact</button>
-		</div>
-	</div>
-	<canvas id="game" width=1000 height=300 class="rounded"></canvas>
-	<div id="checkStart">
-		<h2>Progress through the game tutorial to look through my</h2>
-		<h2>portfolio or use the navigation arrows instead of playing.</h2>
-		<button class="rounded button" id="checkStartButton"
-			onclick="removeCheckStart()">Start Game</button>
-	</div>
-</div>
-
-
-<script type="text/javascript" src="web.js"></script>
-<script type="text/javascript" src="script/general.js"></script>
-<script type="text/javascript" src="script/setup.js"></script>
-<script type="text/javascript" src="script/anim.js"></script>
-<script type="text/javascript" src="script/physics.js"></script>
-<script type="text/javascript" src="script/classes.js"></script>
-<script type="text/javascript" src="script/background.js"></script>
-<script type="text/javascript" src="script/test.js"></script>
-<script type="text/javascript" src="script/tutorial.js"></script>
-<script type="text/javascript" src="script/end.js"></script>
-<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>
